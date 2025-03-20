@@ -1,0 +1,5 @@
+<settings>
+<setting propertyKey = "@Properties.runnerID" title="Runner ID" prompt="8 character ID">
+<settingConfig type="alphaNumeric" maxLength="8"/>
+</setting>
+</settings>

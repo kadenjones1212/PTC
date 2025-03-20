@@ -1,0 +1,26 @@
+{
+  "settings" : [ {
+    "key" : "runnerID",
+    "valueType" : "string",
+    "defaultValue" : "KadenJ",
+    "configTitle" : "$literal0$",
+    "configPrompt" : "$literal1$",
+    "configType" : "alphaNumeric",
+    "configError" : null,
+    "configHelpUrl" : null,
+    "configReadonly" : false,
+    "configRequired" : false,
+    "configOptions" : null,
+    "configMin" : null,
+    "configMax" : null,
+    "configMaxLength" : 8
+  } ],
+  "supportsLiveValidation" : false,
+  "languages" : {
+    "valyrian" : {
+      "$literal1$" : "8 character ID",
+      "$literal0$" : "Runner ID",
+      "AppName" : "PTC"
+    }
+  }
+}
