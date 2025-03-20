@@ -4,6 +4,13 @@ import Toybox.Time;
 import Toybox.WatchUi;
 import Toybox.Ant;
 import Toybox.System;
+/*
+using Toybox.Ant;
+var data = "10000000";
+var runnerMessage = new Ant.Message();
+runnerMessage.setPayload(data);
+genericChannel.sendBroadcast(runnerMessage);
+*/
 
 class PTCView extends WatchUi.SimpleDataField
 {
