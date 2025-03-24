@@ -22,55 +22,51 @@ C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Proj
     %tmp.3 = getv %tmp.2 :length;
     %tmp.1 = newa %tmp.3;
     lputv %data.1 %tmp.1;
-[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 13 4 ]
-    %tmp.4 = lgetv %msg;
-    %tmp.5 = getv function %tmp.4 :open;
-    invoke %tmp.4 %tmp.5();
 [ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 15 4 ]
     for @C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_test @C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_incr @C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_end;
 C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_init:
     [ "C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_begin" "C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_end" ]
     %i.2 = local;
-    %tmp.6 = 0;
-    lputv %i.2 %tmp.6;
+    %tmp.4 = 0;
+    lputv %i.2 %tmp.4;
 C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_test:
-    %tmp.8 = lgetv %i.2;
-    %tmp.9 = lgetv %msg;
-    %tmp.10 = getv %tmp.9 :length;
-    %tmp.11 = lt %tmp.8 %tmp.10;
-    bf %tmp.11 @C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_end;
+    %tmp.6 = lgetv %i.2;
+    %tmp.7 = lgetv %msg;
+    %tmp.8 = getv %tmp.7 :length;
+    %tmp.9 = lt %tmp.6 %tmp.8;
+    bf %tmp.9 @C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_end;
 C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_begin:
 C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_41_17_4_start:
 [ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 16 8 ]
-    %tmp.12 = lgetv %data.1;
+    %tmp.10 = lgetv %data.1;
+    %tmp.12 = lgetv %i.2;
     %tmp.14 = lgetv %i.2;
-    %tmp.16 = lgetv %i.2;
-    aputv %tmp.12 %tmp.16 %tmp.14;
+    aputv %tmp.10 %tmp.14 %tmp.12;
 C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_41_17_4_stop:
 C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_incr:
 [ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 15 ]
-    %tmp.19 = lgetv %i.2;
-    %tmp.20 = add %tmp.19 1;
-    lputv %i.2 %tmp.20;
+    %tmp.17 = lgetv %i.2;
+    %tmp.18 = add %tmp.17 1;
+    lputv %i.2 %tmp.18;
     goto @C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_test;
 C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_17_4_for_end:
 [ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 19 4 ]
     [ "C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_10_24_24_0_start" "C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_10_24_24_0_stop" ]
     %message.3 = local;
-    %tmp.23 = getm $.Toybox.Ant;
-    %tmp.24 = getv function ? %tmp.23 :Message;
-    %tmp.21 = newc %tmp.24 ();
-    lputv %message.3 %tmp.21;
+    %tmp.21 = getm $.Toybox.Ant;
+    %tmp.22 = getv function ? %tmp.21 :Message;
+    %tmp.19 = newc %tmp.22 ();
+    lputv %message.3 %tmp.19;
 [ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 20 4 ]
-    %tmp.25 = lgetv %message.3;
-    %tmp.26 = getv function %tmp.25 :setPayload;
-    %tmp.28 = lgetv %data.1;
-    invoke %tmp.25 %tmp.26(%tmp.28);
+    %tmp.23 = lgetv %message.3;
+    %tmp.24 = getv function %tmp.23 :setPayload;
+    %tmp.26 = lgetv %data.1;
+    invoke %tmp.23 %tmp.24(%tmp.26);
 [ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 23 4 ]
-    %tmp.29 = lgetv %msg;
-    %tmp.30 = getv function %tmp.29 :sendBroadcast;
-    %tmp.32 = lgetv %message.3;
-    invoke %tmp.29 %tmp.30(%tmp.32);
+    %tmp.27 = lgetv %msg;
+    %tmp.28 = getv function %tmp.27 :sendBroadcast;
+    %tmp.30 = lgetv %message.3;
+    invoke %tmp.27 %tmp.28(%tmp.30);
 C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_10_24_24_0_stop:
 }
 [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 26; ]

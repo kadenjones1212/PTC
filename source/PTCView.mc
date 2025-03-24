@@ -5,13 +5,23 @@ import Toybox.WatchUi;
 import Toybox.Ant;
 import Toybox.System;
 
-/*
 using Toybox.Ant;
-var data = "10000000";
-var runnerMessage = new Ant.Message();
-runnerMessage.setPayload(data);
-genericChannel.sendBroadcast(runnerMessage);
-*/
+// Wrap the message prep and broadcast in a callback method
+function onMessage(msg) {
+   
+    var data = new [msg.length];    // create an array the length of the message
+    msg.open();
+    // Iterate and add data to the Message with each pass
+    for (var i = 0; i < msg.length; i++) {
+        data[i] = i;            // Adds {0,1,2,3,4,5,6,7}
+    }
+
+    var message = new Ant.Message();
+    message.setPayload(data);       // Form the Message
+
+    // Set the broadcast buffer
+    msg.sendBroadcast(message);
+}
 
 class PTCView extends WatchUi.SimpleDataField
 {
@@ -20,7 +30,7 @@ class PTCView extends WatchUi.SimpleDataField
     function initialize()
     {
         SimpleDataField.initialize();
-        label = "Runner ID";
+        label = "PortaTrack ID";
     }
 
     // The given info object contains all the current workout
