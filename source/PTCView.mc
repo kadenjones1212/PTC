@@ -29,8 +29,8 @@ class PTCView extends WatchUi.SimpleDataField
        
         // See Activity.Info in the documentation for available information.
         return getApp().getRunnerID();
-        
+    
     }
 }
 
- 
+// 

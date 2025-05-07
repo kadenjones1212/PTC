@@ -33,7 +33,7 @@ C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Proj
         invoke %tmp.4 %tmp.5();
 [ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc" 12 4 ]
         %tmp.6 = newa 8;
-        %tmp.7 = 0x14;
+        %tmp.7 = 0x1f;
         %tmp.8 = dup %tmp.6;
         %tmp.9 = aputv %tmp.8 0 %tmp.7;
         %tmp.10 = 2;
@@ -94,7 +94,7 @@ C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Proj
     }
     [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc"; @line = 35; ]
     function getInitialView() as [Views] or [Views, InputDelegates] {
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_35_68_37_4_start:
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_35_68_38_4_start:
 [ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc" 36 8 ]
         %tmp.1 = newa 1;
         %tmp.5 = getv ? :PTCView;
@@ -102,35 +102,35 @@ C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Proj
         %tmp.6 = dup %tmp.1;
         %tmp.7 = aputv %tmp.6 0 %tmp.2;
         ret %tmp.7;
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_35_68_37_4_stop:
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_35_68_38_4_stop:
     }
-    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc"; @line = 38; ]
+    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc"; @line = 39; ]
     function getRunnerID() as String {
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_38_37_41_4_start:
-[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc" 39 8 ]
-        [ "C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_38_37_41_4_start" "C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_38_37_41_4_stop" ]
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_39_37_42_4_start:
+[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc" 40 8 ]
+        [ "C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_39_37_42_4_start" "C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_39_37_42_4_stop" ]
         %runnerID.1 = local;
         %tmp.2 = getv ? :Properties;
         %tmp.3 = getv function %tmp.2 :getValue;
         %tmp.4 = "runnerID";
         %tmp.5 = invoke %tmp.2 %tmp.3(%tmp.4);
         lputv %runnerID.1 %tmp.5;
-[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc" 40 8 ]
+[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc" 41 8 ]
         %tmp.7 = lgetv %runnerID.1;
         ret %tmp.7;
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_38_37_41_4_stop:
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_39_37_42_4_stop:
     }
 }
-[ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc"; @line = 46; ]
+[ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc"; @line = 47; ]
 function getApp() as PTCApp {
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_46_28_48_0_start:
-[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc" 47 4 ]
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_47_28_50_0_start:
+[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc" 48 4 ]
     %tmp.1 = getm $.Toybox.Application;
     %tmp.2 = getv function %tmp.1 :getApp;
     %tmp.3 = invoke %tmp.1 %tmp.2();
     %tmp.4 = as %tmp.3 PTCApp;
     ret %tmp.4;
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_46_28_48_0_stop:
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCApp_mc_47_28_50_0_stop:
 }
 [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCApp.mc"; @line = 1; ]
 <init> {
