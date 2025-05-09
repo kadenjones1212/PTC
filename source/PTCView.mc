@@ -4,8 +4,6 @@ import Toybox.Time;
 import Toybox.WatchUi;
 import Toybox.System;
 
-
-
 class PTCView extends WatchUi.SimpleDataField
 {
 
@@ -16,7 +14,7 @@ class PTCView extends WatchUi.SimpleDataField
         label = "PortaTrack ID";
     }
 
-public var broadcaster = new broadcastClass();
+    public var broadcaster = new broadcastClass();
     function compute(info as Activity.Info) as Numeric or Duration or String or Null
     {
        

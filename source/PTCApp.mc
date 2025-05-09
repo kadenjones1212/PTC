@@ -82,3 +82,4 @@ function getApp() as PTCApp
 {
     return Application.getApp() as PTCApp;
 }
+
