@@ -20,9 +20,7 @@ class PTCApp extends Application.AppBase
     {
     }
 
-    function onMessage(msg)
-    {
-    }
+    
     function getInitialView() as[Views] or [ Views, InputDelegates ]
     {
         return [new PTCView()];
@@ -40,11 +38,17 @@ class PTCApp extends Application.AppBase
 class broadcastClass extends Ant.GenericChannel {
     using Toybox.Ant;
     using Toybox.Lang;
+    using Toybox.System;
     // Step 1: Assign the channel
+    function onMessage(msg)
+    {
+        
+    }
     var channelType = Ant.CHANNEL_TYPE_SHARED_BIDIRECTIONAL_RECEIVE;
-    var chanAssign = new Ant.ChannelAssignment(channelType, Ant.NETWORK_PUBLIC);
+    var channelAssign = new Ant.ChannelAssignment(channelType, Ant.NETWORK_PUBLIC);
+    var channelMethod = new Lang.Method(broadcastClass, :onMessage);
     function initialize(){
-        GenericChannel.initialize(Lang.Method(:onMessage), chanAssign); // No message handler for simplicity
+        GenericChannel.initialize(method(channelMethod), channelAssign);
     }
   public function broadcastID(){
     
@@ -65,7 +69,7 @@ class broadcastClass extends Ant.GenericChannel {
 
     // Step 4: Create and broadcast a message
     var message = new Ant.Message();
-    var payload = [1, 2, 3, 4, 5, 6, 7, 8] as Array<Number>; // Example payload
+    var payload = [0x66, 2, 3, 4, 5, 6, 7, 8] as Array<Number>; // Example payload
     message.setPayload(payload);
     GenericChannel.sendBroadcast(message);
 
