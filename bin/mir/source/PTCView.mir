@@ -7,44 +7,52 @@ import Toybox.Time;
 [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 4; ]
 import Toybox.WatchUi;
 [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 5; ]
-import Toybox.Ant;
-[ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 6; ]
 import Toybox.System;
-[ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 8; ]
-using Toybox.Ant;
-[ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 12; ]
+[ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 10; ]
 class PTCView extends WatchUi.SimpleDataField{
-    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 12; ]
+    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 10; ]
     <init> {
     }
-    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 12; ]
+    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 10; ]
     static
     <init> {
     }
-    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 16; ]
+    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 14; ]
     function initialize() as Void {
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_17_4_20_4_start:
-[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 18 8 ]
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_18_4_start:
+[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 16 8 ]
         %tmp.2 = getv ? :SimpleDataField;
         %tmp.3 = getv function %tmp.2 :initialize;
         invoke %tmp.2 %tmp.3();
-[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 19 8 ]
+[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 17 8 ]
         %tmp.4 = "PortaTrack ID";
         putv self :label %tmp.4;
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_17_4_20_4_stop:
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_15_4_18_4_stop:
     }
-    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 27; ]
+    [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 25; ]
     function compute(info as Activity.Info) as Numeric or Duration or String or Null {
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_28_4_33_4_start:
-[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 31 8 ]
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_26_4_31_4_start:
+[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 29 8 ]
         %tmp.1 = self;
         %tmp.2 = getv function %tmp.1 :getApp;
         %tmp.3 = invoke %tmp.1 %tmp.2();
         %tmp.4 = getv function %tmp.3 :getRunnerID;
         %tmp.5 = invoke %tmp.3 %tmp.4();
         ret %tmp.5;
-C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_28_4_33_4_stop:
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_26_4_31_4_stop:
     }
+}
+[ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 33; ]
+function onActive() {
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_33_19_35_4_start:
+[ "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc" 34 8 ]
+    %tmp.1 = self;
+    %tmp.2 = getv function %tmp.1 :broadcastClass;
+    %tmp.3 = invoke %tmp.1 %tmp.2();
+    %tmp.4 = getv function %tmp.3 :broadcastID;
+    %tmp.5 = invoke %tmp.3 %tmp.4();
+    ret %tmp.5;
+C_Users_kaden_OneDrive___Hamilton_Southeastern_Schools_1__EDD_Senior_Design_Project_Programming_Files_PTC_source_PTCView_mc_33_19_35_4_stop:
 }
 [ @file = "C:\Users\kaden\OneDrive - Hamilton Southeastern Schools\1) EDD\Senior Design Project\Programming Files\PTC\source\PTCView.mc"; @line = 1; ]
 <init> {

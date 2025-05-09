@@ -2,10 +2,8 @@ import Toybox.Activity;
 import Toybox.Lang;
 import Toybox.Time;
 import Toybox.WatchUi;
-import Toybox.Ant;
 import Toybox.System;
 
-using Toybox.Ant;
 // Wrap the message prep and broadcast in a callback method
 
 
@@ -29,8 +27,10 @@ class PTCView extends WatchUi.SimpleDataField
        
         // See Activity.Info in the documentation for available information.
         return getApp().getRunnerID();
-    
+        
     }
 }
-
+function onActive(){
+        return broadcastClass().broadcastID();
+    }
 // 
